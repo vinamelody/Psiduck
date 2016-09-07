@@ -12,9 +12,12 @@
 		5A0E5FEC1D804EC6004BB125 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A0E5FEA1D804EC6004BB125 /* Main.storyboard */; };
 		5A0E5FEE1D804EC6004BB125 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A0E5FED1D804EC6004BB125 /* Assets.xcassets */; };
 		5A0E5FF11D804EC6004BB125 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A0E5FEF1D804EC6004BB125 /* LaunchScreen.storyboard */; };
+		901072327ED5C6DC570D042E /* Pods_Psiduck.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54BEE69C3BE8788397CA87F9 /* Pods_Psiduck.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1A9A892087BE6C52AA44EA72 /* Pods-Psiduck.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Psiduck.release.xcconfig"; path = "Pods/Target Support Files/Pods-Psiduck/Pods-Psiduck.release.xcconfig"; sourceTree = "<group>"; };
+		54BEE69C3BE8788397CA87F9 /* Pods_Psiduck.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Psiduck.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A0E5FE31D804EC5004BB125 /* Psiduck.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Psiduck.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A0E5FE61D804EC6004BB125 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5A0E5FE81D804EC6004BB125 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		5A0E5FED1D804EC6004BB125 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5A0E5FF01D804EC6004BB125 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5A0E5FF21D804EC6004BB125 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE7BFCF822D2F83A9490B3F4 /* Pods-Psiduck.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Psiduck.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Psiduck/Pods-Psiduck.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				901072327ED5C6DC570D042E /* Pods_Psiduck.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,8 @@
 			children = (
 				5A0E5FE51D804EC6004BB125 /* Psiduck */,
 				5A0E5FE41D804EC5004BB125 /* Products */,
+				81AB9877A304CE843A9E5B09 /* Pods */,
+				81ECDCAEDC23952C19547EBC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +71,23 @@
 			path = Psiduck;
 			sourceTree = "<group>";
 		};
+		81AB9877A304CE843A9E5B09 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AE7BFCF822D2F83A9490B3F4 /* Pods-Psiduck.debug.xcconfig */,
+				1A9A892087BE6C52AA44EA72 /* Pods-Psiduck.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		81ECDCAEDC23952C19547EBC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				54BEE69C3BE8788397CA87F9 /* Pods_Psiduck.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5A0E5FF51D804EC6004BB125 /* Build configuration list for PBXNativeTarget "Psiduck" */;
 			buildPhases = (
+				7284E9A901D0D695B9CEC68E /* [CP] Check Pods Manifest.lock */,
 				5A0E5FDF1D804EC5004BB125 /* Sources */,
 				5A0E5FE01D804EC5004BB125 /* Frameworks */,
 				5A0E5FE11D804EC5004BB125 /* Resources */,
+				4EA3901B1FF9D550EDCEC6E9 /* [CP] Embed Pods Frameworks */,
+				17CEDCE32437CFFE1357E153 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -129,6 +156,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		17CEDCE32437CFFE1357E153 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Psiduck/Pods-Psiduck-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4EA3901B1FF9D550EDCEC6E9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Psiduck/Pods-Psiduck-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7284E9A901D0D695B9CEC68E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5A0E5FDF1D804EC5004BB125 /* Sources */ = {
@@ -249,9 +324,11 @@
 		};
 		5A0E5FF61D804EC6004BB125 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE7BFCF822D2F83A9490B3F4 /* Pods-Psiduck.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Psiduck/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.vinamelody.vina.Psiduck;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -260,9 +337,11 @@
 		};
 		5A0E5FF71D804EC6004BB125 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A9A892087BE6C52AA44EA72 /* Pods-Psiduck.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Psiduck/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.vinamelody.vina.Psiduck;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -288,6 +367,7 @@
 				5A0E5FF71D804EC6004BB125 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
