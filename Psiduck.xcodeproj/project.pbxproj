@@ -12,11 +12,27 @@
 		5A0E5FEC1D804EC6004BB125 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A0E5FEA1D804EC6004BB125 /* Main.storyboard */; };
 		5A0E5FEE1D804EC6004BB125 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A0E5FED1D804EC6004BB125 /* Assets.xcassets */; };
 		5A0E5FF11D804EC6004BB125 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A0E5FEF1D804EC6004BB125 /* LaunchScreen.storyboard */; };
+		5AAB37841D81A61200832C5B /* LoadingOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AAB37831D81A61200832C5B /* LoadingOverlay.swift */; };
+		5ABCB8821D8143F9000E0F9D /* ViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABCB8811D8143F9000E0F9D /* ViewControllerTest.swift */; };
+		5ABCB8881D816462000E0F9D /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABCB8871D816462000E0F9D /* InfoViewController.swift */; };
+		5ABCB88A1D8166E8000E0F9D /* PsiReading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABCB8891D8166E8000E0F9D /* PsiReading.swift */; };
 		901072327ED5C6DC570D042E /* Pods_Psiduck.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54BEE69C3BE8788397CA87F9 /* Pods_Psiduck.framework */; };
+		AD100152255FEC688F570E69 /* Pods_PsiduckTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC45D9B07E2CD58CCC738F65 /* Pods_PsiduckTests.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5ABCB87C1D8142FB000E0F9D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5A0E5FDB1D804EC5004BB125 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5A0E5FE21D804EC5004BB125;
+			remoteInfo = Psiduck;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		1A9A892087BE6C52AA44EA72 /* Pods-Psiduck.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Psiduck.release.xcconfig"; path = "Pods/Target Support Files/Pods-Psiduck/Pods-Psiduck.release.xcconfig"; sourceTree = "<group>"; };
+		20C5C554340B12BE254C7BCB /* Pods-PsiduckTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PsiduckTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PsiduckTests/Pods-PsiduckTests.release.xcconfig"; sourceTree = "<group>"; };
 		54BEE69C3BE8788397CA87F9 /* Pods_Psiduck.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Psiduck.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A0E5FE31D804EC5004BB125 /* Psiduck.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Psiduck.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A0E5FE61D804EC6004BB125 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -25,7 +41,15 @@
 		5A0E5FED1D804EC6004BB125 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5A0E5FF01D804EC6004BB125 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5A0E5FF21D804EC6004BB125 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5AAB37831D81A61200832C5B /* LoadingOverlay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingOverlay.swift; sourceTree = "<group>"; };
+		5ABCB8771D8142FA000E0F9D /* PsiduckTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PsiduckTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5ABCB87B1D8142FB000E0F9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5ABCB8811D8143F9000E0F9D /* ViewControllerTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerTest.swift; sourceTree = "<group>"; };
+		5ABCB8871D816462000E0F9D /* InfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		5ABCB8891D8166E8000E0F9D /* PsiReading.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PsiReading.swift; sourceTree = "<group>"; };
+		768F709BA26291BB5944E781 /* Pods-PsiduckTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PsiduckTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PsiduckTests/Pods-PsiduckTests.debug.xcconfig"; sourceTree = "<group>"; };
 		AE7BFCF822D2F83A9490B3F4 /* Pods-Psiduck.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Psiduck.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Psiduck/Pods-Psiduck.debug.xcconfig"; sourceTree = "<group>"; };
+		DC45D9B07E2CD58CCC738F65 /* Pods_PsiduckTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PsiduckTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +61,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5ABCB8741D8142FA000E0F9D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD100152255FEC688F570E69 /* Pods_PsiduckTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -44,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				5A0E5FE51D804EC6004BB125 /* Psiduck */,
+				5ABCB8781D8142FB000E0F9D /* PsiduckTests */,
 				5A0E5FE41D804EC5004BB125 /* Products */,
 				81AB9877A304CE843A9E5B09 /* Pods */,
 				81ECDCAEDC23952C19547EBC /* Frameworks */,
@@ -54,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				5A0E5FE31D804EC5004BB125 /* Psiduck.app */,
+				5ABCB8771D8142FA000E0F9D /* PsiduckTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -67,8 +101,20 @@
 				5A0E5FED1D804EC6004BB125 /* Assets.xcassets */,
 				5A0E5FEF1D804EC6004BB125 /* LaunchScreen.storyboard */,
 				5A0E5FF21D804EC6004BB125 /* Info.plist */,
+				5ABCB8871D816462000E0F9D /* InfoViewController.swift */,
+				5ABCB8891D8166E8000E0F9D /* PsiReading.swift */,
+				5AAB37831D81A61200832C5B /* LoadingOverlay.swift */,
 			);
 			path = Psiduck;
+			sourceTree = "<group>";
+		};
+		5ABCB8781D8142FB000E0F9D /* PsiduckTests */ = {
+			isa = PBXGroup;
+			children = (
+				5ABCB87B1D8142FB000E0F9D /* Info.plist */,
+				5ABCB8811D8143F9000E0F9D /* ViewControllerTest.swift */,
+			);
+			path = PsiduckTests;
 			sourceTree = "<group>";
 		};
 		81AB9877A304CE843A9E5B09 /* Pods */ = {
@@ -76,6 +122,8 @@
 			children = (
 				AE7BFCF822D2F83A9490B3F4 /* Pods-Psiduck.debug.xcconfig */,
 				1A9A892087BE6C52AA44EA72 /* Pods-Psiduck.release.xcconfig */,
+				768F709BA26291BB5944E781 /* Pods-PsiduckTests.debug.xcconfig */,
+				20C5C554340B12BE254C7BCB /* Pods-PsiduckTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -84,6 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				54BEE69C3BE8788397CA87F9 /* Pods_Psiduck.framework */,
+				DC45D9B07E2CD58CCC738F65 /* Pods_PsiduckTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -111,6 +160,27 @@
 			productReference = 5A0E5FE31D804EC5004BB125 /* Psiduck.app */;
 			productType = "com.apple.product-type.application";
 		};
+		5ABCB8761D8142FA000E0F9D /* PsiduckTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5ABCB8801D8142FB000E0F9D /* Build configuration list for PBXNativeTarget "PsiduckTests" */;
+			buildPhases = (
+				600D11B7E499FBDEDC7D546F /* [CP] Check Pods Manifest.lock */,
+				5ABCB8731D8142FA000E0F9D /* Sources */,
+				5ABCB8741D8142FA000E0F9D /* Frameworks */,
+				5ABCB8751D8142FA000E0F9D /* Resources */,
+				E5D5BF812F9CA9D9C5A02625 /* [CP] Embed Pods Frameworks */,
+				186AE900C4B0DD63D719538F /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5ABCB87D1D8142FB000E0F9D /* PBXTargetDependency */,
+			);
+			name = PsiduckTests;
+			productName = PsiduckTests;
+			productReference = 5ABCB8771D8142FA000E0F9D /* PsiduckTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -123,6 +193,10 @@
 				TargetAttributes = {
 					5A0E5FE21D804EC5004BB125 = {
 						CreatedOnToolsVersion = 7.3.1;
+					};
+					5ABCB8761D8142FA000E0F9D = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 5A0E5FE21D804EC5004BB125;
 					};
 				};
 			};
@@ -140,6 +214,7 @@
 			projectRoot = "";
 			targets = (
 				5A0E5FE21D804EC5004BB125 /* Psiduck */,
+				5ABCB8761D8142FA000E0F9D /* PsiduckTests */,
 			);
 		};
 /* End PBXProject section */
@@ -152,6 +227,13 @@
 				5A0E5FF11D804EC6004BB125 /* LaunchScreen.storyboard in Resources */,
 				5A0E5FEE1D804EC6004BB125 /* Assets.xcassets in Resources */,
 				5A0E5FEC1D804EC6004BB125 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5ABCB8751D8142FA000E0F9D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -173,6 +255,21 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Psiduck/Pods-Psiduck-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		186AE900C4B0DD63D719538F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PsiduckTests/Pods-PsiduckTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		4EA3901B1FF9D550EDCEC6E9 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -186,6 +283,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Psiduck/Pods-Psiduck-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		600D11B7E499FBDEDC7D546F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		7284E9A901D0D695B9CEC68E /* [CP] Check Pods Manifest.lock */ = {
@@ -203,6 +315,21 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		E5D5BF812F9CA9D9C5A02625 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PsiduckTests/Pods-PsiduckTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -211,11 +338,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				5A0E5FE91D804EC6004BB125 /* ViewController.swift in Sources */,
+				5ABCB88A1D8166E8000E0F9D /* PsiReading.swift in Sources */,
+				5ABCB8881D816462000E0F9D /* InfoViewController.swift in Sources */,
+				5AAB37841D81A61200832C5B /* LoadingOverlay.swift in Sources */,
 				5A0E5FE71D804EC6004BB125 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5ABCB8731D8142FA000E0F9D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5ABCB8821D8143F9000E0F9D /* ViewControllerTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5ABCB87D1D8142FB000E0F9D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5A0E5FE21D804EC5004BB125 /* Psiduck */;
+			targetProxy = 5ABCB87C1D8142FB000E0F9D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		5A0E5FEA1D804EC6004BB125 /* Main.storyboard */ = {
@@ -348,6 +494,32 @@
 			};
 			name = Release;
 		};
+		5ABCB87E1D8142FB000E0F9D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 768F709BA26291BB5944E781 /* Pods-PsiduckTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = PsiduckTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.vinamelody.vina.PsiduckTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Psiduck.app/Psiduck";
+			};
+			name = Debug;
+		};
+		5ABCB87F1D8142FB000E0F9D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 20C5C554340B12BE254C7BCB /* Pods-PsiduckTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = PsiduckTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.vinamelody.vina.PsiduckTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Psiduck.app/Psiduck";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -365,6 +537,15 @@
 			buildConfigurations = (
 				5A0E5FF61D804EC6004BB125 /* Debug */,
 				5A0E5FF71D804EC6004BB125 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5ABCB8801D8142FB000E0F9D /* Build configuration list for PBXNativeTarget "PsiduckTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5ABCB87E1D8142FB000E0F9D /* Debug */,
+				5ABCB87F1D8142FB000E0F9D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

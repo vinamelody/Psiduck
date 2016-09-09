@@ -3,12 +3,13 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Psiduck-->
+        <!--PsiLite-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Psiduck" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="Psiduck" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -20,24 +21,93 @@
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="SbE-Gt-dn0">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="E2d-DC-KvW">
+                                <rect key="frame" x="16" y="585" width="343" height="45"/>
+                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="642-ab-wKp"/>
+                                </constraints>
+                                <state key="normal" title="Refresh">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnRefreshTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mTU-Ww-Lfw"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap the pins on the map to see the latest PSI Readings." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lKL-Rx-sWj">
+                                <rect key="frame" x="16" y="644" width="343" height="15"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="E2d-DC-KvW" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="0px-R9-3lF"/>
                             <constraint firstItem="SbE-Gt-dn0" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="A8k-Go-UEm"/>
                             <constraint firstItem="SbE-Gt-dn0" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="D4F-tR-bqJ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="E2d-DC-KvW" secondAttribute="trailing" id="N7v-r8-CBb"/>
+                            <constraint firstItem="lKL-Rx-sWj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OFA-pG-jIH"/>
                             <constraint firstItem="SbE-Gt-dn0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Rcw-W8-A0m"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="E2d-DC-KvW" secondAttribute="bottom" constant="37" id="fBY-Mx-Lxm"/>
                             <constraint firstItem="SbE-Gt-dn0" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="gww-Qb-SzT"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="lKL-Rx-sWj" secondAttribute="bottom" constant="8" id="lj6-KO-Ykp"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="lKL-Rx-sWj" secondAttribute="trailing" id="pd9-eV-vHl"/>
+                            <constraint firstItem="E2d-DC-KvW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sUW-Rv-DcS"/>
+                            <constraint firstItem="lKL-Rx-sWj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="v2j-ar-hp4"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Psiduck" id="bn0-Kx-kIq"/>
+                    <navigationItem key="navigationItem" title="PsiLite" id="bn0-Kx-kIq">
+                        <barButtonItem key="rightBarButtonItem" title="Info" id="ooL-Sf-GLE">
+                            <connections>
+                                <segue destination="ir8-p5-jqY" kind="show" id="C8x-gh-2Ch"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
+                        <outlet property="btnRefresh" destination="E2d-DC-KvW" id="LUH-Lv-F1L"/>
                         <outlet property="map" destination="SbE-Gt-dn0" id="qji-NS-TPe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1116.5" y="389.5"/>
+            <point key="canvasLocation" x="687.5" y="380.5"/>
+        </scene>
+        <!--Info View Controller-->
+        <scene sceneID="9iF-8f-6LV">
+            <objects>
+                <viewController id="ir8-p5-jqY" customClass="InfoViewController" customModule="Psiduck" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="NSL-Za-Lqa"/>
+                        <viewControllerLayoutGuide type="bottom" id="wgp-bp-793"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vxl-5i-fr8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nnc-m3-s3Y">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wgp-bp-793" firstAttribute="top" secondItem="nnc-m3-s3Y" secondAttribute="bottom" id="I7k-Qd-5Yi"/>
+                            <constraint firstItem="nnc-m3-s3Y" firstAttribute="leading" secondItem="vxl-5i-fr8" secondAttribute="leading" id="MoI-yp-Kfc"/>
+                            <constraint firstItem="nnc-m3-s3Y" firstAttribute="centerX" secondItem="vxl-5i-fr8" secondAttribute="centerX" id="fVD-v3-oao"/>
+                            <constraint firstAttribute="trailing" secondItem="nnc-m3-s3Y" secondAttribute="trailing" id="iAB-yj-g2X"/>
+                            <constraint firstItem="nnc-m3-s3Y" firstAttribute="centerY" secondItem="vxl-5i-fr8" secondAttribute="centerY" id="tBw-Bx-zWx"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="webView" destination="nnc-m3-s3Y" id="Kpu-rQ-NJm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iXD-sU-N87" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1183.5" y="380.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="y9O-rb-rho">
