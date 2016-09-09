@@ -1,6 +1,6 @@
 # PsiLite
 
-PsiLite shows you the latest Pollutant Standards Index (PSI) for the five regions in Singapore, taken from (NEA's Data)[https://data.gov.sg/dataset/psi] website.
+PsiLite shows you the latest Pollutant Standards Index (PSI) for the five regions in Singapore, taken from [NEA's Data](https://data.gov.sg/dataset/psi) website.
 
 PsiLite is made using Apple Swift version 2.2 on XCode Version 7.3.1 (7D1014).
 
