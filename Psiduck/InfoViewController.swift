@@ -10,10 +10,14 @@ import UIKit
 
 class InfoViewController: UIViewController {
 
+    @IBOutlet weak var webView: UIWebView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        
+        let url: NSURL! = NSURL(string: "https://dl.dropboxusercontent.com/u/28350025/psi.html")
+        let requestObj = NSURLRequest(URL: url)
+        webView.loadRequest(requestObj)
     }
 
     override func didReceiveMemoryWarning() {
