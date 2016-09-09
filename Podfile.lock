@@ -1,15 +1,21 @@
 PODS:
   - Alamofire (3.4.1)
+  - Nimble (4.0.1)
+  - Quick (0.9.2)
   - SwiftyJSON (2.3.2)
 
 DEPENDENCIES:
   - Alamofire
+  - Nimble
+  - Quick
   - SwiftyJSON
 
 SPEC CHECKSUMS:
   Alamofire: 01a82e2f6c0f860ade35534c8dd88be61bdef40c
+  Nimble: 0f3c8b8b084cda391209c3c5efbb48bedeeb920a
+  Quick: 18d057bc66451eedd5d1c8dc99ba2a5db6e60226
   SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
 
-PODFILE CHECKSUM: b906c3816744f1a1fd7bda151fb6b30663078670
+PODFILE CHECKSUM: c2390804113e25843e221a9ba4a1cbb1bd9bb534
 
 COCOAPODS: 1.0.1
